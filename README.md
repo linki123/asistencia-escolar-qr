@@ -1,14 +1,22 @@
 # Sistema de Asistencia Escolar con QR
 
-Sistema web para el registro de asistencia de estudiantes mediante códigos QR.
+Sistema web para el registro de asistencia de estudiantes mediante códigos QR.  
 Incluye gestión de múltiples colegios, roles de usuario, generación de QR, escaneo, reportes y configuración de turnos.
 
-**Demo en línea:**
+**Demo en línea:**  
 https://asistencia-escolar-qr-production.up.railway.app/
 
-## Acceso a la demo
+## Credenciales de acceso (Demo)
 
-Solicita las credenciales al administrador por un canal privado. No publiques contraseñas en este repositorio. Las claves de demo que estuvieron en versiones anteriores deben cambiarse.
+### Acceso Master
+- **Correo:** `admin@gmail.com`
+- **Contraseña:** `EdENDNd90D2v5K-oHyJnTLeJUtWq2X6j`
+
+### Acceso Administrador (ColegioPrueba)
+- **Correo:** `admin@demo-01.local`
+- **Contraseña:** `2a91WmgqoFPreO-LXESgf4U-kgHaBia7`
+
+> Estas credenciales son únicamente para la demo del proyecto escolar.
 
 ---
 
@@ -68,44 +76,41 @@ asistencia-escolar-qr/
 │       ├── components/   # Componentes de la interfaz
 │       └── lib/          # Cliente de la API
 └── package.json
-```
+
+Instalación local: 
+Clona el repositorio e instala dependencias:
+Bashgit clone https://github.com/linki123/asistencia-escolar-qr.git
 
 ## Instalación local (Windows)
 
 1. Clona el repositorio:
 
-   ```powershell
+   ```bash
    git clone https://github.com/linki123/asistencia-escolar-qr.git
    cd asistencia-escolar-qr
-   ```
 
-2. Configura el backend y la base de datos:
+2- Configura el backend y la base de datos:
 
-   ```powershell
-   Set-Location .\backend
-   npm install
-   npm run configure:db
-   ```
+cd backend
+npm install
+npm run configure:db
 
-3. Crea las tablas y el usuario master:
+3- Crea las tablas y el usuario master:
 
-   ```powershell
-   npm run db:setup
-   npm run create:master
-   ```
+npm run db:setup
+npm run create:master
 
-4. Inicia el backend:
+4-Inicia el backend:
 
-   ```powershell
-   npm run dev
-   ```
+npm run dev
 
-5. En otra terminal, desde la carpeta del proyecto, inicia el frontend:
 
-   ```powershell
-   Set-Location .\frontend
-   npm install
-   npm run dev
-   ```
+5- En otra terminal, inicia el frontend:
 
-6. Abre `http://localhost:5173` en el navegador.
+cd frontend
+npm install
+npm run dev
+
+6- Abre el navegador en:
+
+http://localhost:5173
