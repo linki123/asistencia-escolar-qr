@@ -1,0 +1,24 @@
+{
+  "name": "sistema-asistencia-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "init:env": "node scripts/init-env.js",
+    "configure:db": "node scripts/configure-database.js",
+    "db:setup": "node scripts/setup-database.js",
+    "create:master": "node scripts/create-master.js",
+    "provision:demo": "node scripts/provision-demo.js",
+    "rotate:demo-passwords": "node scripts/rotate-demo-passwords.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.4",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.12.0"
+  }
+}
